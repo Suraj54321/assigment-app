@@ -1,0 +1,52 @@
+#please clone the first project
+git clone <URL>
+
+#Install node dependency
+npm install 
+
+#Run dev command
+npm run start/start:dev
+
+
+API Endpoint
+
+POST:http://localhost:3000/users/create
+Request 
+{
+    "firstName":"Suyash Singh",
+    "lastName":"Tiwari 78",
+    "email":"st14369345@gmail.com",
+    "phoneNumber":"9510468308",
+    "age":22,
+    "city":"Surat",
+    "state":"Gujarat",
+    "country":"India"
+}
+
+POST:http://localhost:3000/users/
+Request
+{
+    "page":1,
+    "pageSize":10,
+    "searchString":"Suraj",
+    "sortOrder":"ASC"
+}
+
+POST:http://localhost:3000/users/:id
+Params:id -> userId
+
+POST:http://localhost:3000/users/3
+Request
+{
+    "firstName":"Abhishek",
+    "lastName":"Tiwari",
+    "email":"st143693@gmail.com",
+    "phoneNumber":"9510468308",
+    "age":23,
+    "city":"Surat",
+    "state":"Gujarat",
+    "country":"USA"
+}
+
+DELETE:http://localhost:3000/users/6
+Params:id->UserId
