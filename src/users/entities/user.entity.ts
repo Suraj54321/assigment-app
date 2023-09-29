@@ -1,7 +1,8 @@
-import { Entity,Column,PrimaryGeneratedColumn,CreateDateColumn,UpdateDateColumn, Index } from "typeorm";
+import { Entity,Column,PrimaryGeneratedColumn,CreateDateColumn,UpdateDateColumn, Index, Unique } from "typeorm";
 
 @Entity('users')
-@Index(['email','phoneNumber','city','state','country'])
+@Index(['email','phoneNumber','age','city','state','country'])
+@Unique(['phoneNumber'])
 export class users {
     @PrimaryGeneratedColumn()
     id:number

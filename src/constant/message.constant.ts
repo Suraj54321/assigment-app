@@ -7,6 +7,7 @@ export const ResponseMessage=[
         DELETE:"User record deleted successfully",
         USER_RECORD_NOT_FOUND:"User record not found",
         INTERNAL_SERVER:"Internal server error",
-        SOMETHING_WENT_WRONG:"Something went wrong"
+        SOMETHING_WENT_WRONG:"Something went wrong",
+        USER_RECORD_FOUND:"User record already exists",
     }
 ]

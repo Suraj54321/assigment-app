@@ -57,6 +57,25 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+nest g resource <resouce_name>
+
+# user table schema
+CREATE TABLE IF NOT EXISTS public.users
+(
+    id integer NOT NULL DEFAULT nextval('users_id_seq'::regclass),
+    "firstName" character varying COLLATE pg_catalog."default" NOT NULL,
+    "lastName" character varying COLLATE pg_catalog."default" NOT NULL,
+    email character varying COLLATE pg_catalog."default" NOT NULL,
+    "phoneNumber" character varying COLLATE pg_catalog."default" NOT NULL,
+    age integer NOT NULL,
+    city character varying COLLATE pg_catalog."default" NOT NULL,
+    state character varying COLLATE pg_catalog."default" NOT NULL,
+    country character varying COLLATE pg_catalog."default" NOT NULL,
+    "createdAt" timestamp without time zone NOT NULL DEFAULT ('now'::text)::timestamp(6) with time zone,
+    "updatedAt" timestamp without time zone NOT NULL DEFAULT ('now'::text)::timestamp(6) with time zone,
+    CONSTRAINT "PK_a3ffb1c0c8416b9fc6f907b7433" PRIMARY KEY (id),
+    CONSTRAINT "UQ_1e3d0240b49c40521aaeb953293" UNIQUE ("phoneNumber")
+)
 
 ## Support
 

@@ -17,6 +17,18 @@ export class UsersService {
   }
   async create(createUserDto: CreateUserDto) {
     try{
+      let requestData=createUserDto;
+      let checkUserExists=await this.usersRepository.findOne({
+        where:{
+          phoneNumber:requestData.phoneNumber
+        },
+        select:{
+          id:true
+        }
+      })
+      if(checkUserExists){
+        return this.responseUtilService.responseFormat(ResponseStatus[0].BAD_REQUEST,ResponseMessage[0].USER_RECORD_FOUND,{})
+      }
       let finalObject={
         ...createUserDto
       }
@@ -36,10 +48,11 @@ export class UsersService {
     try{
       let {page,pageSize,sortOrder,searchString} =filterUserDto
       let where={}
-      if(searchString){
+      if(searchString && searchString != -1){
         where=[
           {firstName: ILike('%' + searchString + '%')},
           {lastName: ILike('%' + searchString + '%')},
+          {age:  searchString},
           {phoneNumber: ILike('%' + searchString + '%')},
           {city: ILike('%' + searchString + '%')},
           {state: ILike('%' + searchString + '%')},

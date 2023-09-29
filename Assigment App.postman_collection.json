@@ -1,0 +1,570 @@
+{
+	"info": {
+		"_postman_id": "b49dbc5d-3476-4cbc-8d99-a9c799654ef5",
+		"name": "Assigment App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12707306"
+	},
+	"item": [
+		{
+			"name": "CRUD",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\":\"Praveen\",\n    \"lastName\":\"Tiwari 78\",\n    \"email\":\"st14369@gmail.com\",\n    \"phoneNumber\":\"8128279520\",\n    \"age\":43,\n    \"city\":\"Surat\",\n    \"state\":\"Gujarat\",\n    \"country\":\"India\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\":\"Praveen\",\n    \"lastName\":\"Tiwari 78\",\n    \"email\":\"st14369@gmail.com\",\n    \"phoneNumber\":\"8128279520\",\n    \"age\":43,\n    \"city\":\"Surat\",\n    \"state\":\"Gujarat\",\n    \"country\":\"India\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/users/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"create"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "307"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"133-7P4Q5mqTYmU5tVg8CskIEleKzg4\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Sep 2023 11:59:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"User created successfully\",\n    \"data\": {\n        \"firstName\": \"Praveen\",\n        \"lastName\": \"Tiwari 78\",\n        \"email\": \"st14369@gmail.com\",\n        \"phoneNumber\": \"8128279520\",\n        \"age\": 43,\n        \"city\": \"Surat\",\n        \"state\": \"Gujarat\",\n        \"country\": \"India\",\n        \"id\": 22,\n        \"createdAt\": \"2023-09-29T11:59:56.143Z\",\n        \"updatedAt\": \"2023-09-29T11:59:56.143Z\"\n    }\n}"
+						},
+						{
+							"name": "Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\":\"Praveen\",\n    \"lastName\":\"Tiwari 78\",\n    \"email\":\"st14369@gmail.com\",\n    \"phoneNumber\":\"8128279520\",\n    \"age\":43,\n    \"city\":\"Surat\",\n    \"state\":\"Gujarat\",\n    \"country\":\"India\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/users/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"create"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "307"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"133-7P4Q5mqTYmU5tVg8CskIEleKzg4\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Sep 2023 11:59:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"User created successfully\",\n    \"data\": {\n        \"firstName\": \"Praveen\",\n        \"lastName\": \"Tiwari 78\",\n        \"email\": \"st14369@gmail.com\",\n        \"phoneNumber\": \"8128279520\",\n        \"age\": 43,\n        \"city\": \"Surat\",\n        \"state\": \"Gujarat\",\n        \"country\": \"India\",\n        \"id\": 22,\n        \"createdAt\": \"2023-09-29T11:59:56.143Z\",\n        \"updatedAt\": \"2023-09-29T11:59:56.143Z\"\n    }\n}"
+						},
+						{
+							"name": "Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\":\"Praveen\",\n    \"lastName\":\"Tiwari 78\",\n    \"email\":\"st14369@gmail.com\",\n    \"phoneNumber\":\"8128279520\",\n    \"age\":43,\n    \"city\":\"Surat\",\n    \"state\":\"Gujarat\",\n    \"country\":\"India\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/users/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"create"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "307"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"133-7P4Q5mqTYmU5tVg8CskIEleKzg4\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Sep 2023 11:59:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"User created successfully\",\n    \"data\": {\n        \"firstName\": \"Praveen\",\n        \"lastName\": \"Tiwari 78\",\n        \"email\": \"st14369@gmail.com\",\n        \"phoneNumber\": \"8128279520\",\n        \"age\": 43,\n        \"city\": \"Surat\",\n        \"state\": \"Gujarat\",\n        \"country\": \"India\",\n        \"id\": 22,\n        \"createdAt\": \"2023-09-29T11:59:56.143Z\",\n        \"updatedAt\": \"2023-09-29T11:59:56.143Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Fetch All users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page\":1,\n    \"pageSize\":10,\n    \"searchString\":\"-1\",\n    \"sortOrder\":{\n        \"name\":1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Fetch All users",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"page\":1,\n    \"pageSize\":10,\n    \"searchString\":\"-1\",\n    \"sortOrder\":{\n        \"name\":1\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/users/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "590"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"24e-y0axYW8SraqUbBSUdnOe+EICJpg\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Sep 2023 12:02:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"User data fetched successfully\",\n    \"data\": {\n        \"users\": [\n            {\n                \"id\": 22,\n                \"firstName\": \"Praveen\",\n                \"lastName\": \"Tiwari 78\",\n                \"email\": \"st14369@gmail.com\",\n                \"age\": 43,\n                \"phoneNumber\": \"8128279520\",\n                \"city\": \"Surat\",\n                \"state\": \"Gujarat\",\n                \"country\": \"India\",\n                \"createdAt\": \"2023-09-29T11:59:56.143Z\",\n                \"updatedAt\": \"2023-09-29T11:59:56.143Z\"\n            },\n            {\n                \"id\": 20,\n                \"firstName\": \"Suyash Singh\",\n                \"lastName\": \"Tiwari 78\",\n                \"email\": \"st14369345@gmail.com\",\n                \"age\": 22,\n                \"phoneNumber\": \"9510468308\",\n                \"city\": \"Surat\",\n                \"state\": \"Gujarat\",\n                \"country\": \"India\",\n                \"createdAt\": \"2023-09-29T11:49:31.729Z\",\n                \"updatedAt\": \"2023-09-29T11:49:31.729Z\"\n            }\n        ],\n        \"count\": 2\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get user detail by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get user detail by id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/users/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3a-8hEs7tDndBDzzreS3sTTuvEMjnI\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Sep 2023 12:05:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 400,\n    \"message\": \"User record not found\",\n    \"data\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:3000/users/5",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\":\"Abhishek\",\n    \"lastName\":\"Tiwari\",\n    \"email\":\"st143693@gmail.com\",\n    \"phoneNumber\":\"9510468308\",\n    \"age\":23,\n    \"city\":\"Surat\",\n    \"state\":\"Gujarat\",\n    \"country\":\"USA\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update API",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\":\"Abhishek\",\n    \"lastName\":\"Tiwari\",\n    \"email\":\"st143693@gmail.com\",\n    \"phoneNumber\":\"9510468308\",\n    \"age\":23,\n    \"city\":\"Surat\",\n    \"state\":\"Gujarat\",\n    \"country\":\"USA\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/users/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3a-8hEs7tDndBDzzreS3sTTuvEMjnI\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Sep 2023 12:05:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 400,\n    \"message\": \"User record not found\",\n    \"data\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete user by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"6"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete user by id",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/users/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"users",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3a-8hEs7tDndBDzzreS3sTTuvEMjnI\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Sep 2023 12:06:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 400,\n    \"message\": \"User record not found\",\n    \"data\": {}\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
